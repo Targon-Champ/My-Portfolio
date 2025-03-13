@@ -3,3 +3,8 @@
 body {
   background-color: rgb(37, 35, 35);
 }
+
+.text-bordered {
+  -webkit-text-stroke: 2px black; /* Border thickness and color */
+  /* color: transparent; Optional: Makes the text hollow */
+}

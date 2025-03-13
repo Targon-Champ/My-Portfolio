@@ -15,7 +15,17 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#about"
+              href="/My-Portfolio/"
+            >
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+                HOME
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="block px-4 py-2 no-underline outline-none hover:no-underline"
+              href="/My-Portfolio/about"
             >
               <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
                 ABOUT
@@ -25,7 +35,7 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#experience"
+              href="/My-Portfolio/experience"
             >
               <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
                 EXPERIENCE
@@ -35,7 +45,7 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#skills"
+              href="/My-Portfolio/skills"
             >
               <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
                 SKILLS
@@ -45,7 +55,7 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#projects"
+              href="/My-Portfolio/projects"
             >
               <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
                 PROJECTS
@@ -55,7 +65,7 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#education"
+              href="/My-Portfolio/education"
             >
               <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
                 EDUCATION
@@ -65,7 +75,7 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/#testimonials"
+              href="/My-Portfolio/testimonials"
             >
               <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
                 TESTIMONIALS

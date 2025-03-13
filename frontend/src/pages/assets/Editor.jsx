@@ -30,6 +30,8 @@ function Editor() {
             '"Scikit-learn"',
             " , ",
             '"PyTorch"',
+            ' , ',
+            'TensorFlow'
           ],
         },
         {
@@ -38,7 +40,7 @@ function Editor() {
         },
         {
           skill_type: "'Version Controlling Systems'",
-          skills: ['"GIT"', " , ", '"ServiceNow Updatesets"'],
+          skills: ['"GIT"', " , ", '"ServiceNow Updatesets"', ' , ', "Docker"],
         },
         {
           skill_type: "'Tools'",

@@ -3,6 +3,7 @@ import Intro from "./assets/Intro";
 import { useEffect, useState } from "react";
 import phone from "./assets/media/phone.svg"
 
+
 const Home = () => {
   const [showMessage, setShowMessage] = useState(false);
 
@@ -23,10 +24,11 @@ const Home = () => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
+  
 
 
   return (
-    <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 px-15 lg:px-30 flex-1">
+    <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 px-15 lg:px-30">
       {showMessage && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-[#F0EAD2] p-6 rounded-lg shadow-xl transform transition-all scale-95 animate-fadeIn">
