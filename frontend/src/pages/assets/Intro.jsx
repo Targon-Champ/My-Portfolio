@@ -6,8 +6,8 @@ import twitter from "./media/x.svg"; //X icon by Icons8
 import facebook from "./media/facebook.svg";
 import leetcode from "./media/leetcode.svg"; //Leetcode Icon by Icon 54 on IconScout
 import Animated_Button from "./Animated_Button";
-import { useNavigate } from "react-router-dom";
-import resume from './media/Resume.pdf'
+import { Link } from "react-router-dom";
+import resume from "./media/Resume.pdf";
 function Intro() {
   const linkedin_link = "https://www.linkedin.com/in/immanisrisatyasai/";
   const github_link = "https://github.com/Targon-Champ";
@@ -15,8 +15,6 @@ function Intro() {
   const twitter_link = "https://x.com/SriSatyaSaiI";
   const facebook_link =
     "https://www.facebook.com/profile.php?id=100025661940907";
-
-    const navigate = useNavigate();
 
   const handleDownload = () => {
     const pdfUrl = resume;
@@ -83,8 +81,11 @@ function Intro() {
         </div>
       </div>
       <div className="mt-5 lg:mt-10 flex flex-row space-x-6 lg:space-x-12">
-        <Animated_Button text="CONTACT ME" target={()=>navigate("/My-Portfolio/CONTACTME")}/>
-        <Animated_Button text="GET MY RESUME" target={handleDownload}/>
+        <Link to="contactme">
+          <Animated_Button text="CONTACT ME" />
+        </Link>
+
+        <Animated_Button text="GET MY RESUME" target={handleDownload} />
       </div>
     </>
   );

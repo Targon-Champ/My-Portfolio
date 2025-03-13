@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import ComingSoon from "./pages/ComingSoon";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
@@ -12,8 +12,8 @@ const App = () => {
     <div className="w-full flex flex-col min-h-screen">
       <Navbar/>
       <Routes>
-        <Route path="/My-Portfolio/HOME" element={<div className="flex-1"><Home/></div>}></Route>
-        <Route path="/My-Portfolio/*" element={<div className="flex-1"><ComingSoon/></div>}></Route>
+        <Route path="/" element={<div className="flex-1"><Home/></div>}></Route>
+        <Route path="/*" element={<div className="flex-1"><ComingSoon/></div>}></Route>
       </Routes>
       
       <Footer/>
