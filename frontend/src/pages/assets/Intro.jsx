@@ -83,7 +83,7 @@ function Intro() {
         </div>
       </div>
       <div className="mt-5 lg:mt-10 flex flex-row space-x-6 lg:space-x-12">
-        <Animated_Button text="CONTACT ME" target={()=>navigate("/My-Portfolio/ContactForm")}/>
+        <Animated_Button text="CONTACT ME" target={()=>navigate("/My-Portfolio/CONTACTME")}/>
         <Animated_Button text="GET MY RESUME" target={handleDownload}/>
       </div>
     </>

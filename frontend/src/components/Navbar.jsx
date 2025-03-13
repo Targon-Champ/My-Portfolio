@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 const Navbar = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const contents = ["HOME", "ABOUT", "EXPERIENCE", "SKILLS", "PROJECTS", "EDUCATION", "TESTIMONIALS"];
 
   return (
     <nav class="bg-transparent">
@@ -13,76 +13,73 @@ const Navbar = () => {
           class="mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100"
           id="navbar-default"
         >
-          <li>
-            <a
-              class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href=""
+
+          {contents.map((item, index)=>(
+                      <li>
+                      <div id={index}
+                        class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+                        onClick={() => navigate("/My-Portfolio/"+item)}
+                      >
+                        {item}
+                      </div>
+                    </li>
+          ))}
+          {/* <li>
+            <div
+              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+              onClick={() => navigate("/My-Portfolio/")}
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/")}>
-                HOME
-              </div>
-            </a>
+              HOME
+            </div>
           </li>
           <li>
-            <a
-              class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href=""
+            <div
+              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+              onClick={() => navigate("/My-Portfolio/About")}
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/About")}>
-                ABOUT
-              </div>
-            </a>
+              ABOUT
+            </div>
           </li>
           <li>
-            <a
-              class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href=""
+            <div
+              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+              onClick={() => navigate("/My-Portfolio/Experience")}
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Experience")}>
-                EXPERIENCE
-              </div>
-            </a>
+              EXPERIENCE
+            </div>
           </li>
           <li>
-            <a
-              class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href=""
+            <div
+              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+              onClick={() => navigate("/My-Portfolio/Skills")}
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Skills")}>
-                SKILLS
-              </div>
-            </a>
+              SKILLS
+            </div>
           </li>
           <li>
-            <a
-              class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href=""
+            <div
+              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+              onClick={() => navigate("/My-Portfolio/Projects")}
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Projects")}>
-                PROJECTS
-              </div>
-            </a>
+              PROJECTS
+            </div>
           </li>
           <li>
-            <a
-              class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href=""
+            <div
+              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+              onClick={() => navigate("/My-Portfolio/Education")}
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Education")}>
-                EDUCATION
-              </div>
-            </a>
+              EDUCATION
+            </div>
           </li>
           <li>
-            <a
-              class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href=""
+            <div
+              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+              onClick={() => navigate("/My-Portfolio/Testimonials")}
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Testimonials")}>
-                TESTIMONIALS
-              </div>
-            </a>
-          </li>
+              TESTIMONIALS
+            </div>
+          </li> */}
         </ul>
       </div>
     </nav>

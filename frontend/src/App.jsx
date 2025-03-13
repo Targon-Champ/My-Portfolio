@@ -12,7 +12,7 @@ const App = () => {
     <div className="w-full flex flex-col min-h-screen">
       <Navbar/>
       <Routes>
-        <Route path="/My-Portfolio" element={<div className="flex-1"><Home/></div>}></Route>
+        <Route path="/My-Portfolio/HOME" element={<div className="flex-1"><Home/></div>}></Route>
         <Route path="/My-Portfolio/*" element={<div className="flex-1"><ComingSoon/></div>}></Route>
       </Routes>
       
