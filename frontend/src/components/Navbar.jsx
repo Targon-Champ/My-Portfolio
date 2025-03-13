@@ -1,12 +1,7 @@
 import { Link } from "react-router-dom";
+import home from './assets/home.svg';
 const Navbar = () => {
   const contents = [
-    "ABOUT",
-    "EXPERIENCE",
-    "SKILLS",
-    "PROJECTS",
-    "EDUCATION",
-    "TESTIMONIALS",
   ];
 
   return (
@@ -23,9 +18,9 @@ const Navbar = () => {
             <Link to="">
               <div
                 id="HOME"
-                className="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+                className="flex flex-row px-4 py-2 text-[#ADC178] transition-all duration-300 hover:text-[#6C584C] hover:scale-110 font-bold text-4xl"
               >
-                HOME
+                <img src={home} alt="" className="w-10 h-10"/>  <p className="font-mono">HOME</p>
               </div>
             </Link>
           </li>
@@ -34,7 +29,7 @@ const Navbar = () => {
               <Link to={`${item.toLowerCase()}`}>
                 <div
                   id={index}
-                  className="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+                  className="lg:text-xl block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
                 >
                   {item}
                 </div>

@@ -6,7 +6,7 @@ import tailwind from "./assets/tailwind.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#343434] text-white p-4 mt-10 flex justify-between items-center w-full">
+    <footer className="bg-[#343434] text-white p-4 flex justify-between items-center w-full">
       <div className="flex items-center">
         <img src={copyright} alt="" className="w-5 h-5 mr-2" />
         <p className="text-[#535151]">
