@@ -1,6 +1,7 @@
-
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
 
+  const navigate = useNavigate()
 
   return (
     <nav class="bg-transparent">
@@ -15,9 +16,9 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/My-Portfolio/"
+              href=""
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/")}>
                 HOME
               </div>
             </a>
@@ -25,9 +26,9 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/My-Portfolio/about"
+              href=""
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/About")}>
                 ABOUT
               </div>
             </a>
@@ -35,9 +36,9 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/My-Portfolio/experience"
+              href=""
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Experience")}>
                 EXPERIENCE
               </div>
             </a>
@@ -45,9 +46,9 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/My-Portfolio/skills"
+              href=""
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Skills")}>
                 SKILLS
               </div>
             </a>
@@ -55,9 +56,9 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/My-Portfolio/projects"
+              href=""
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Projects")}>
                 PROJECTS
               </div>
             </a>
@@ -65,9 +66,9 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/My-Portfolio/education"
+              href=""
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Education")}>
                 EDUCATION
               </div>
             </a>
@@ -75,9 +76,9 @@ const Navbar = () => {
           <li>
             <a
               class="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/My-Portfolio/testimonials"
+              href=""
             >
-              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold">
+              <div class="text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold" onClick={()=>navigate("/My-Portfolio/Testimonials")}>
                 TESTIMONIALS
               </div>
             </a>
