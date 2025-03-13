@@ -7,10 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules/
+frontend/node_modules/
 dist/
 dist-ssr
 *.local
+
+# Ignore environment variables
+frontend/.env
+backend/.env
+
+backend/__pycache__/
+backend/media/
+backend/static/
 
 .env
 .DS_Store
