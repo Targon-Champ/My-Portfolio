@@ -28,7 +28,7 @@ function Intro() {
   };
   return (
     <>
-      <h1 className="text-5xl font-bold leading-[3rem] text-[#ADC178] md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
+      <h1 className="font-mono text-5xl sm:text-3xl font-bold leading-[3rem] text-[#ADC178] md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
         Hello,
         <br />
         This is <span className="text-[#6C584C]">SATYA IMMANI,</span> <br />
@@ -51,7 +51,6 @@ function Intro() {
             repeat={Infinity}
           />
         </span>
-        
       </h1>
       <div className="flex flex-row  mt-5 lg:mt-10 space-x-3 lg:space-x-6">
         <div className="rounded-full lg:h-12 lg:w-12 h-6 w-6 transform transition-transform duration-300 hover:scale-125">
@@ -80,12 +79,12 @@ function Intro() {
           </a>
         </div>
       </div>
-      <div className="mt-5 lg:mt-10 flex flex-row space-x-6 lg:space-x-12">
+      <div className="mt-2 lg:mt-5 flex flex-row space-x-6 lg:space-x-12">
         {/* <Link to="contactme">
           <Animated_Button text="CONTACT ME" />
         </Link> */}
-
-        <Animated_Button text="GET MY RESUME" target={handleDownload} />
+<div className="font-mono"> <Animated_Button text="GET MY RESUME" target={handleDownload} /></div>
+       
       </div>
     </>
   );

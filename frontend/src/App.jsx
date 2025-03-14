@@ -10,7 +10,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
-      {/* <div className="w-full flex flex-col min-h-screen"> */}
+      <div className="w-full flex flex-col min-h-screen">
         <section className="flex flex-row w-full">
           <section className="w-1/8 min-h-screen">
             <Sidebar></Sidebar>
@@ -22,7 +22,7 @@ const App = () => {
               <Route
                 path="/"
                 element={
-                  <div className="flex-1">
+                  <div className="flex-1 items-center h-screen">
                     <Home />
                   </div>
                 }
@@ -39,8 +39,8 @@ const App = () => {
           </section>
         </section>
 
-        {/* <Footer /> */}
-      {/* </div> */}
+        <Footer />
+      </div>
     </Router>
   );
 };

@@ -1,56 +1,57 @@
 import React from 'react'
 
 function Editor() {
-    const data = [
-        {
-          skill_type: "'Programming Skills'",
-          skills: [
-            '"Python"',
-            " , ",
-            '"JavaScript"',
-            " , ",
-            '"C++"',
-            " , ",
-            '"SQL"',
-          ],
-        },
-        {
-          skill_type: "'Web Development'",
-          skills: ['"Django"', " , ", '"React.js"', " , ", '"Tailwindcss"'],
-        },
-        {
-          skill_type: "'Data & AI/ML'",
-          skills: [
-            '"Pandas"',
-            " , ",
-            '"Numpy"',
-            " , ",
-            '"Matplotlib"',
-            " , ",
-            '"Scikit-learn"',
-            " , ",
-            '"PyTorch"',
-            ' , ',
-            'TensorFlow'
-          ],
-        },
-        {
-          skill_type: "'Scripting Languages'",
-          skills: ['"HTML/CSS"', ' , ','"Latex"']
-        },
-        {
-          skill_type: "'Version Controlling Systems'",
-          skills: ['"GIT"', " , ", '"ServiceNow Updatesets"', ' , ', "Docker"],
-        },
-        {
-          skill_type: "'Tools'",
-          skills: ['"GitHub"', " , ", '"ServiceNow"', " , ", '"Tableau"'],
-        },
-        {
-          skill_type: "'ERP Systems'",
-          skills: ['"SAP S/4HANA (Beginner)"', " , ", '"ServiceNow (HRSD/ITSM)"'],
-        },
-      ];
+  const skills = ['"Programming"',' , ','"Web Development"', ' , ','"Data & AI/ML"', ' , ','"Devops"', ' , ','"Low Code Platforms"'];
+    // const data = [
+    //     {
+    //       skill_type: "'Programming Skills'",
+    //       skills: [
+    //         '"Python"',
+    //         " , ",
+    //         '"JavaScript"',
+    //         " , ",
+    //         '"C++"',
+    //         " , ",
+    //         '"SQL"'
+    //       ],
+    //     },
+    //     {
+    //       skill_type: "'Web Development'",
+    //       skills: ['"Django"', " , ", '"React.js"', " , ", '"Tailwindcss"'],
+    //     },
+    //     {
+    //       skill_type: "'Data & AI/ML'",
+    //       skills: [
+    //         '"Pandas"',
+    //         " , ",
+    //         '"Numpy"',
+    //         " , ",
+    //         '"Matplotlib"',
+    //         " , ",
+    //         '"Scikit-learn"',
+    //         " , ",
+    //         '"PyTorch"',
+    //         ' , ',
+    //         'TensorFlow'
+    //       ],
+    //     },
+    //     {
+    //       skill_type: "'Scripting Languages'",
+    //       skills: ['"HTML/CSS"', ' , ','"Latex"']
+    //     },
+    //     {
+    //       skill_type: "'Version Controlling Systems'",
+    //       skills: ['"GIT"', " , ", '"ServiceNow Updatesets"', ' , ', "Docker"],
+    //     },
+    //     {
+    //       skill_type: "'Tools'",
+    //       skills: ['"GitHub"', " , ", '"ServiceNow"', " , ", '"Tableau"'],
+    //     },
+    //     {
+    //       skill_type: "'ERP Systems'",
+    //       skills: ['"SAP S/4HANA (Beginner)"', " , ", '"ServiceNow (HRSD/ITSM)"'],
+    //     },
+    //   ];
   return (
     <>
     <div className="flex flex-row">
@@ -101,11 +102,16 @@ function Editor() {
         <div className="flex flex-row ml-6 lg:ml-12">
           <span className="mr-2 text-[#DADADA]">self.skills</span>
           <span className="mr-2 text-[#DADADA]">=</span>
-          <span className="text-[#FFD602]">{"{"}</span>
-        </div>
+          <span className="text-[#FFD602]">{"["}        {skills.map((data, index)=>(
+                        <span className="text-[#CE9178]" id={index}>
+                        {data}
+                      </span>
+        ))}<span className="text-[#FFD602]">{"]"}</span></span>
+        
+          </div>
         {/* skills */}
 
-        {data.map((data, index) => (
+        {/* {data.map((data, index) => (
           <div key={index} className="ml-12 lg:ml-24">
             <span className="mr-2" id={index}>
               {data.skill_type}:
@@ -118,8 +124,14 @@ function Editor() {
             ))}
             <span className="text-[#DA70D6]" id={0}>{"]"}</span>
           </div>
-        ))}
-        <span className="text-[#FFD602] ml-6 lg:ml-12">{"}"}</span>
+        ))} */}
+        {/* {skills.map((data, index)=>(
+                        <span className="text-[#CE9178]" id={index}>
+                        {data}
+                      </span>
+        ))} */}
+        {/* <span className="text-[#FFD602] ml-6 lg:ml-12">{"]"}</span> */}
+       
 
         {/* Company */}
         <div className="ml-3 lg:ml-6 flex flex-row">
