@@ -64,9 +64,9 @@ function Editor() {
         <div className="h-3 w-3 rounded-full bg-red-400"></div>
         <div className="h-3 w-3 rounded-full bg-orange-400"></div>
         <div className="h-3 w-3 rounded-full bg-[#23950A]"></div>
-        <div className="h-3 w-full text-center relative">
+        {/* <div className="h-3 w-full text-center relative">
           <span className="relative -top-1 text-sm">Profile.py</span>
-        </div>
+        </div> */}
       </div>
     </div>
     <div className="overflow-hidden border-t-[2px] border-[#ADC178] px-4 lg:px-8 py-4 lg:py-8 ">
