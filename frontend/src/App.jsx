@@ -12,13 +12,11 @@ const App = () => {
     <Router>
       <div className="w-full flex flex-col min-h-screen">
         <section className="flex flex-row w-full">
-          <section className="w-1/8 min-h-screen">
-            <Sidebar></Sidebar>
-          </section>
 
-          <section className="flex flex-col w-7/8">
+          <section className="flex flex-col w-full min-h-screen bg-[#252323]">
             <Navbar />
-            <Routes>
+            <Home />
+            {/* <Routes>
               <Route
                 path="/"
                 element={
@@ -35,7 +33,7 @@ const App = () => {
                   </div>
                 }
               ></Route>
-            </Routes>
+            </Routes> */}
           </section>
         </section>
 

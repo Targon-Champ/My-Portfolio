@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import home from './assets/home.svg';
+import about from './assets/about.svg';
+import experience from './assets/experience.svg';
+import skills from './assets/skills.svg';
+import projects from './assets/projects.svg';
+import contact from './assets/contact.svg';
 const Navbar = () => {
-  const contents = [
+  const contents = ["ABOUT", "EXPERIENCE", "EDUCATION", "PROJECTS", "CONTACT"
   ];
+  const images = [about, experience, skills, projects, contact];
 
   return (
     <nav class="bg-transparent">
@@ -15,83 +21,27 @@ const Navbar = () => {
           id="navbar-default"
         >
           <li>
-            <Link to="">
+            <a href="/My-Portfolio/">
               <div
                 id="HOME"
-                className="flex flex-row px-4 py-2 text-[#ADC178] transition-all duration-300 hover:text-[#6C584C] hover:scale-110 font-bold text-4xl"
+                className="flex flex-row px-4 py-2 text-[#ADC178] transition-all duration-300 hover:text-[#6C584C] hover:scale-110 font-bold lg:text-2xl md:text-xl sm:text-lg text-base"
               >
-                <img src={home} alt="" className="w-10 h-10"/>  <p className="font-mono">HOME</p>
+                <img src={home} alt="" className="w-8 h-7"/>  <p className="font-mono">HOME</p>
               </div>
-            </Link>
+            </a>
           </li>
           {contents.map((item, index) => (
             <li>
-              <Link to={`${item.toLowerCase()}`}>
+              <a jump-to={item.toLowerCase()}>
                 <div
                   id={index}
-                  className="lg:text-xl block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
+                  className="flex flex-row px-4 py-2 text-[#ADC178] transition-all duration-300 hover:text-[#6C584C] hover:scale-110 font-bold lg:text-2xl md:text-xl sm:text-lg text-base"
                 >
-                  {item}
+                  <img src={images[index]} alt="" className="w-8 h-7"/>  <p className="font-mono">{item}</p>
                 </div>
-              </Link>
+              </a>
             </li>
           ))}
-          {/* <li>
-            <div
-              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
-              onClick={() => navigate("/My-Portfolio/")}
-            >
-              HOME
-            </div>
-          </li>
-          <li>
-            <div
-              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
-              onClick={() => navigate("/My-Portfolio/About")}
-            >
-              ABOUT
-            </div>
-          </li>
-          <li>
-            <div
-              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
-              onClick={() => navigate("/My-Portfolio/Experience")}
-            >
-              EXPERIENCE
-            </div>
-          </li>
-          <li>
-            <div
-              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
-              onClick={() => navigate("/My-Portfolio/Skills")}
-            >
-              SKILLS
-            </div>
-          </li>
-          <li>
-            <div
-              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
-              onClick={() => navigate("/My-Portfolio/Projects")}
-            >
-              PROJECTS
-            </div>
-          </li>
-          <li>
-            <div
-              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
-              onClick={() => navigate("/My-Portfolio/Education")}
-            >
-              EDUCATION
-            </div>
-          </li>
-          <li>
-            <div
-              class="block px-4 py-2 text-sm text-[#ADC178] transition-colors duration-300 hover:text-[#6C584C] font-bold"
-              onClick={() => navigate("/My-Portfolio/Testimonials")}
-            >
-              TESTIMONIALS
-            </div>
-          </li> */}
         </ul>
       </div>
     </nav>

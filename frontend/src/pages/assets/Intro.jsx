@@ -28,13 +28,16 @@ function Intro() {
   };
   return (
     <>
-      <h2 className="font-mono text-3xl font-bold leading-[3rem] text-[#ADC178] md:font-extrabold lg:text-[2.4rem] lg:leading-[3.5rem]">
-        Hello,
+ <h2 className="font-mono text-4xl font-bold leading-[3rem] text-[#ADC178] md:font-extrabold lg:text-[2.4rem] lg:leading-[3.5rem]">
+  Hello,
+  <br />
+  I’m <span className="text-[#ffff]">Sri Immani</span>,
+  <br />
+  <span className="text-[#ADC178]">Software Engineer & AI Solutions Builder</span>
+
+
         <br />
-        This is <span className="text-[#F0EAD2]">SATYA IMMANI,</span> <br />
-        I'm a Professional
-        <br />
-        <span className="text-[#ffff]" id="role">
+        {/* <span className="text-[#ADC178]" id="role">
           <TypeAnimation
             sequence={[
               "Full-Stack Developer",
@@ -49,8 +52,8 @@ function Intro() {
             wrapper="span"
             speed={25}
             repeat={Infinity}
-          />
-        </span>
+          /> 
+        </span>*/}
       </h2>
       <div className="flex flex-row  mt-5 lg:mt-10 space-x-3 lg:space-x-6">
         <div className="rounded-full lg:h-12 lg:w-12 h-6 w-6 transform transition-transform duration-300 hover:scale-125">
